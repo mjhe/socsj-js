@@ -1,1 +1,4 @@
-console.log('1')
+(function() {
+  var _geolocation = null
+  
+})()
