@@ -21,12 +21,12 @@
         _location = "inicio"
         break
       case("it"):
-        _location = "inicio"
+        _location = "inizio"
         break
       default:
         break
     }
-    alert("navigate to:" + _location)
+    console.log("navigate to:" + _location)
   }
     
 })()
