@@ -1,6 +1,15 @@
 (function() {
+  
+    
+  // hide the menu based on the language...
+  var hide_menu = function(language) {
+
+  }
+    
   var _key = "language-detected"
   var _language_detected = localStorage.getItem(_key)
+  
+  var _current_language = window.location.pathname.substring(0,4).toLowerCase()
   
   if (_language_detected == null || _language_detected == "") {
     var _language = window.navigator.languages ? window.navigator.languages[0] : (window.navigator.userLanguage || window.navigator.language)
@@ -28,5 +37,10 @@
     }
     console.log("navigate to:" + _location)
   }
-    
+  
+  if (_current_language != "/") {
+    hide_menu(_current_language)
+  }
+
+  
 })()
